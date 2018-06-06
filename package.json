@@ -103,7 +103,6 @@
     "lint": "run-p eslint flow sass-lint",
     "start": "cross-env MODULES=false node server.js",
     "test": "cross-env NODE_ENV=test karma start karma.conf.js --single-run",
-    "prepublish": "test $(npm -v | tr . '\\n' | head -n 1) -ge '4' || exit 1",
     "prepare": "npm run build",
     "codecov":
       "cat coverage/*/lcov.info | ./node_modules/codecov.io/bin/codecov.io.js",
